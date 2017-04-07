@@ -1,0 +1,1292 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/rethinkdb/horizon#readme"
+
+    >horizon (v2.0.0)</a>
+</h1>
+<h4>An open-source developer platform for building realtime, scalable web apps.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon">module horizon</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>create_cert</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>init</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>make_token</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>migrate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>schema</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>serve</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.create_cert">module horizon.create_cert</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.create_cert.run">
+            function <span class="apidocSignatureSpan">horizon.create_cert.</span>run
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.create_cert.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.init">module horizon.init</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.init.run">
+            function <span class="apidocSignatureSpan">horizon.init.</span>run
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.init.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.make_token">module horizon.make_token</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.make_token.run">
+            function <span class="apidocSignatureSpan">horizon.make_token.</span>run
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.make_token.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.migrate">module horizon.migrate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.migrate.run">
+            function <span class="apidocSignatureSpan">horizon.migrate.</span>run
+            <span class="apidocSignatureSpan">(cmdArgs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.migrate.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.schema">module horizon.schema</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.schema.parse_schema">
+            function <span class="apidocSignatureSpan">horizon.schema.</span>parse_schema
+            <span class="apidocSignatureSpan">(schema_toml)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.schema.processApplyConfig">
+            function <span class="apidocSignatureSpan">horizon.schema.</span>processApplyConfig
+            <span class="apidocSignatureSpan">(parsed)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.schema.run">
+            function <span class="apidocSignatureSpan">horizon.schema.</span>run
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.schema.runApplyCommand">
+            function <span class="apidocSignatureSpan">horizon.schema.</span>runApplyCommand
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.schema.runSaveCommand">
+            function <span class="apidocSignatureSpan">horizon.schema.</span>runSaveCommand
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.schema.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.serve">module horizon.serve</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.serve.parseArguments">
+            function <span class="apidocSignatureSpan">horizon.serve.</span>parseArguments
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.serve.processConfig">
+            function <span class="apidocSignatureSpan">horizon.serve.</span>processConfig
+            <span class="apidocSignatureSpan">(parsed)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.serve.run">
+            function <span class="apidocSignatureSpan">horizon.serve.</span>run
+            <span class="apidocSignatureSpan">(args, interruptor)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.serve.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.version">module horizon.version</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.version.run">
+            function <span class="apidocSignatureSpan">horizon.version.</span>run
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.version.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon" id="apidoc.module.horizon">module horizon</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.create_cert" id="apidoc.module.horizon.create_cert">module horizon.create_cert</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.create_cert.run" id="apidoc.element.horizon.create_cert.run">
+        function <span class="apidocSignatureSpan">horizon.create_cert.</span>run
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(args) =&#x3e; {
+  if (args.length) {
+    throw new Error(&#x27;create-cert takes no arguments&#x27;);
+  }
+
+  // TODO: user configuration?
+  const settings = {
+    binaryName: &#x27;openssl&#x27;,
+    keyOutName: &#x27;horizon-key.pem&#x27;,
+    certOutName: &#x27;horizon-cert.pem&#x27;,
+    algo: &#x27;rsa&#x27;,
+    bits: &#x27;2048&#x27;,
+    days: &#x27;365&#x27;,
+  };
+
+  // generate the arguments to the command
+  const binArgs = [ &#x27;req&#x27;, &#x27;-x509&#x27;, &#x27;-nodes&#x27;, &#x27;-batch&#x27;,
+    &#x27;-newkey&#x27;, `${settings.algo}:${settings.bits}`,
+    &#x27;-keyout&#x27;, settings.keyOutName,
+    &#x27;-out&#x27;, settings.certOutName,
+    &#x27;-days&#x27;, settings.days,
+  ];
+
+  return new Promise((resolve, reject) =&#x3e; {
+    hasbin(settings.binaryName, (hasOpenSSL) =&#x3e; {
+      // show the invocation that&#x27;s about to be run
+      console.log(`&#x3e; ${settings.binaryName} ${binArgs.join(&#x27; &#x27;)}`);
+
+      // if we don&#x27;t have openssl, bail
+      if (!hasOpenSSL) {
+        reject(new Error(`Missing ${settings.binaryName}. Make sure it is on the path.`));
+      }
+
+      // otherwise start openssl
+      const sslProc = spawn(settings.binaryName, binArgs);
+
+      // pipe output appropriately
+      sslProc.stdout.pipe(process.stdout, { end: false });
+      sslProc.stderr.pipe(process.stderr, { end: false });
+
+      // say nice things to the user when it&#x27;s done
+      sslProc.on(&#x27;error&#x27;, reject);
+      sslProc.on(&#x27;close&#x27;, (code) =&#x3e; {
+        if (code) {
+          reject(new Error(`OpenSSL failed with code ${code}.`));
+        } else {
+          console.log(&#x27;Everything seems to be fine. &#x27; +
+                      &#x27;Remember to add your shiny new certificates to your Horizon config!&#x27;);
+          resolve();
+        }
+      });
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return Promise.resolve().then(() =&#x3e; {
+    white(&#x27;Validating current schema version&#x27;);
+    return r.dbList().contains(`${project}_internal`)
+      .branch(true, r.error(internalNotFound))
+      .do(() =&#x3e; checkForHzTables)
+      .do(() =&#x3e; waitForCollections)
+      .<span class="apidocCodeKeywordSpan">run</span>(this.conn)
+      .then(() =&#x3e; green(&#x27; └── Pre-2.0 schema found&#x27;))
+      .catch((e) =&#x3e; {
+        if (e.msg === internalNotFound) {
+          throw new NiceError(e.msg, {
+            description: `\
+This could happen if you don&#x27;t have a Horizon app in this database, or if \
+you&#x27;ve already migrated this database to the v2.0 format.`,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.init" id="apidoc.module.horizon.init">module horizon.init</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.init.run" id="apidoc.element.horizon.init.run">
+        function <span class="apidocSignatureSpan">horizon.init.</span>run
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(args) =&#x3e;
+  Promise.resolve(args)
+.then(parseArguments)
+.then((parsed) =&#x3e; {
+  const check = checkProjectName(
+    parsed.projectName,
+    process.cwd(),
+    fs.readdirSync(&#x27;.&#x27;)
+  );
+  const projectName = check.projectName;
+  const dirName = check.dirName;
+  const chdirTo = check.chdirTo;
+  const createDir = check.createDir;
+  maybeMakeDir(createDir, dirName);
+  maybeChdir(chdirTo);
+
+  // Before we create things, check if the directory is empty
+  const dirWasPopulated = fs.readdirSync(process.cwd()).length !== 0;
+  populateDir(projectName, dirWasPopulated, chdirTo, dirName);
+})</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return Promise.resolve().then(() =&#x3e; {
+    white(&#x27;Validating current schema version&#x27;);
+    return r.dbList().contains(`${project}_internal`)
+      .branch(true, r.error(internalNotFound))
+      .do(() =&#x3e; checkForHzTables)
+      .do(() =&#x3e; waitForCollections)
+      .<span class="apidocCodeKeywordSpan">run</span>(this.conn)
+      .then(() =&#x3e; green(&#x27; └── Pre-2.0 schema found&#x27;))
+      .catch((e) =&#x3e; {
+        if (e.msg === internalNotFound) {
+          throw new NiceError(e.msg, {
+            description: `\
+This could happen if you don&#x27;t have a Horizon app in this database, or if \
+you&#x27;ve already migrated this database to the v2.0 format.`,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.make_token" id="apidoc.module.horizon.make_token">module horizon.make_token</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.make_token.run" id="apidoc.element.horizon.make_token.run">
+        function <span class="apidocSignatureSpan">horizon.make_token.</span>run
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(args) =&#x3e; Promise.resolve().then(() =&#x3e; {
+  const options = processConfig(parseArguments(args));
+
+  if (options.token_secret === null) {
+    throw new Error(&#x27;No token secret specified, unable to sign the token.&#x27;);
+  }
+  const token = jwt.sign(
+    { id: options.user, provider: null },
+    new Buffer(options.token_secret, &#x27;base64&#x27;),
+    { expiresIn: &#x27;1d&#x27;, algorithm: &#x27;HS512&#x27; }
+  );
+  console.log(`${token}`);
+})</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return Promise.resolve().then(() =&#x3e; {
+    white(&#x27;Validating current schema version&#x27;);
+    return r.dbList().contains(`${project}_internal`)
+      .branch(true, r.error(internalNotFound))
+      .do(() =&#x3e; checkForHzTables)
+      .do(() =&#x3e; waitForCollections)
+      .<span class="apidocCodeKeywordSpan">run</span>(this.conn)
+      .then(() =&#x3e; green(&#x27; └── Pre-2.0 schema found&#x27;))
+      .catch((e) =&#x3e; {
+        if (e.msg === internalNotFound) {
+          throw new NiceError(e.msg, {
+            description: `\
+This could happen if you don&#x27;t have a Horizon app in this database, or if \
+you&#x27;ve already migrated this database to the v2.0 format.`,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.migrate" id="apidoc.module.horizon.migrate">module horizon.migrate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.migrate.run" id="apidoc.element.horizon.migrate.run">
+        function <span class="apidocSignatureSpan">horizon.migrate.</span>run
+        <span class="apidocSignatureSpan">(cmdArgs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function run(cmdArgs) {
+  const options = processConfig(cmdArgs);
+  interrupt.on_interrupt(() =&#x3e; teardown());
+  return Promise.resolve().bind({ options })
+    .then(setup)
+    .then(validateMigration)
+    .then(makeBackup)
+    .then(renameUserTables)
+    .then(moveInternalTables)
+    .then(renameIndices)
+    .then(rewriteHzCollectionDocs)
+    .then(exportNewSchema)
+    .finally(teardown);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return Promise.resolve().then(() =&#x3e; {
+    white(&#x27;Validating current schema version&#x27;);
+    return r.dbList().contains(`${project}_internal`)
+      .branch(true, r.error(internalNotFound))
+      .do(() =&#x3e; checkForHzTables)
+      .do(() =&#x3e; waitForCollections)
+      .<span class="apidocCodeKeywordSpan">run</span>(this.conn)
+      .then(() =&#x3e; green(&#x27; └── Pre-2.0 schema found&#x27;))
+      .catch((e) =&#x3e; {
+        if (e.msg === internalNotFound) {
+          throw new NiceError(e.msg, {
+            description: `\
+This could happen if you don&#x27;t have a Horizon app in this database, or if \
+you&#x27;ve already migrated this database to the v2.0 format.`,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.schema" id="apidoc.module.horizon.schema">module horizon.schema</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.schema.parse_schema" id="apidoc.element.horizon.schema.parse_schema">
+        function <span class="apidocSignatureSpan">horizon.schema.</span>parse_schema
+        <span class="apidocSignatureSpan">(schema_toml)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(schema_toml) =&#x3e; {
+  const parsed = Joi.validate(toml.parse(schema_toml), schema_schema);
+  const schema = parsed.value;
+
+  if (parsed.error) {
+    throw parsed.error;
+  }
+
+  const collections = [ ];
+  for (const name in schema.collections) {
+    collections.push({
+      id: name,
+      indexes: schema.collections[name].indexes.map((index) =&#x3e; {
+        if (typeof index === &#x27;string&#x27;) {
+          return { fields: v1_0_name_to_fields(index), multi: false, geo: false };
+        } else {
+          return { fields: index.fields, multi: false, geo: false };
+        }
+      }),
+    });
+  }
+
+  // Make sure the &#x27;users&#x27; collection is present, as some things depend on
+  // its existence.
+  if (!schema.collections || !schema.collections.users) {
+    collections.push({ id: &#x27;users&#x27;, indexes: [ ] });
+  }
+
+  const groups = [ ];
+  for (const name in schema.groups) {
+    groups.push(Object.assign({ id: name }, schema.groups[name]));
+  }
+
+  return { groups, collections };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.schema.processApplyConfig" id="apidoc.element.horizon.schema.processApplyConfig">
+        function <span class="apidocSignatureSpan">horizon.schema.</span>processApplyConfig
+        <span class="apidocSignatureSpan">(parsed)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(parsed) =&#x3e; {
+  let options, in_file;
+
+  options = config.default_options();
+  options = config.merge_options(options,
+    config.read_from_config_file(parsed.project_path));
+  options = config.merge_options(options, config.read_from_env());
+  options = config.merge_options(options, config.read_from_flags(parsed));
+
+  if (parsed.schema_file === &#x27;-&#x27;) {
+    in_file = process.stdin;
+  } else {
+    in_file = fs.createReadStream(parsed.schema_file, { flags: &#x27;r&#x27; });
+  }
+
+  if (options.project_name === null) {
+    options.project_name = path.basename(path.resolve(options.project_path));
+  }
+
+  return {
+    subcommand_name: &#x27;apply&#x27;,
+    start_rethinkdb: options.start_rethinkdb,
+    rdb_host: options.rdb_host,
+    rdb_port: options.rdb_port,
+    project_name: options.project_name,
+    project_path: options.project_path,
+    debug: options.debug,
+    update: parse_yes_no_option(parsed.update),
+    force: parse_yes_no_option(parsed.force),
+    in_file,
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+try {
+  fs.accessAsync(opts.schema_file, fs.R_OK | fs.F_OK);
+} catch (e) {
+  console.error(
+    chalk.yellow.bold(&#x27;No .hz/schema.toml file found&#x27;));
+  return;
+}
+const schemaOptions = schema.<span class="apidocCodeKeywordSpan">processApplyConfig</span>({
+  project_name: opts.project_name,
+  schema_file: opts.schema_file,
+  start_rethinkdb: false,
+  connect: `${opts.rdb_host}:${opts.rdb_port}`,
+  update: true,
+  force: false,
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.schema.run" id="apidoc.element.horizon.schema.run">
+        function <span class="apidocSignatureSpan">horizon.schema.</span>run
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(args) =&#x3e;
+Promise.resolve().then(() =&#x3e; {
+  const options = processConfig(parseArguments(args));
+  // Determine if we are saving or applying and use appropriate run function
+  switch (options.subcommand_name) {
+  case &#x27;apply&#x27;:
+    return runApplyCommand(options);
+  case &#x27;save&#x27;:
+    return runSaveCommand(options);
+  default:
+    throw new Error(`Unrecognized schema subcommand: &#x22;${options.subcommand_name}&#x22;`);
+  }
+})</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return Promise.resolve().then(() =&#x3e; {
+    white(&#x27;Validating current schema version&#x27;);
+    return r.dbList().contains(`${project}_internal`)
+      .branch(true, r.error(internalNotFound))
+      .do(() =&#x3e; checkForHzTables)
+      .do(() =&#x3e; waitForCollections)
+      .<span class="apidocCodeKeywordSpan">run</span>(this.conn)
+      .then(() =&#x3e; green(&#x27; └── Pre-2.0 schema found&#x27;))
+      .catch((e) =&#x3e; {
+        if (e.msg === internalNotFound) {
+          throw new NiceError(e.msg, {
+            description: `\
+This could happen if you don&#x27;t have a Horizon app in this database, or if \
+you&#x27;ve already migrated this database to the v2.0 format.`,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.schema.runApplyCommand" id="apidoc.element.horizon.schema.runApplyCommand">
+        function <span class="apidocSignatureSpan">horizon.schema.</span>runApplyCommand
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(options) =&#x3e; {
+  let conn, schema, rdb_server;
+  let obsolete_collections = [ ];
+  const db = options.project_name;
+
+  const cleanup = () =&#x3e;
+    Promise.all([
+      conn ? conn.close() : Promise.resolve(),
+      rdb_server ? rdb_server.close() : Promise.resolve(),
+    ]);
+
+  interrupt.on_interrupt(() =&#x3e; cleanup());
+
+  return Promise.resolve().then(() =&#x3e; {
+    if (options.start_rethinkdb) {
+      change_to_project_dir(options.project_path);
+    }
+
+    return new Promise((resolve, reject) =&#x3e; {
+      let schema_toml = &#x27;&#x27;;
+      options.in_file.on(&#x27;data&#x27;, (buffer) =&#x3e; (schema_toml += buffer));
+      options.in_file.on(&#x27;end&#x27;, () =&#x3e; resolve(schema_toml));
+      options.in_file.on(&#x27;error&#x27;, reject);
+    });
+  }).then((schema_toml) =&#x3e; {
+    schema = parse_schema(schema_toml);
+
+    if (options.start_rethinkdb) {
+      return start_rdb_server({ quiet: !options.debug }).then((server) =&#x3e; {
+        rdb_server = server;
+        options.rdb_host = &#x27;localhost&#x27;;
+        options.rdb_port = server.driver_port;
+      });
+    }
+  }).then(() =&#x3e;
+    r.connect({ host: options.rdb_host,
+                port: options.rdb_port,
+                user: options.rdb_user,
+                password: options.rdb_password,
+                timeout: options.rdb_timeout })
+  ).then((rdb_conn) =&#x3e; {
+    conn = rdb_conn;
+    return initialize_metadata(db, conn);
+  }).then((initialization_result) =&#x3e; {
+    if (initialization_result.tables_created) {
+      console.log(&#x27;Initialized new application metadata.&#x27;);
+    }
+    // Wait for metadata tables to be writable
+    return r.expr([ &#x27;hz_collections&#x27;, &#x27;hz_groups&#x27; ])
+      .forEach((table) =&#x3e;
+        r.db(db).table(table)
+          .wait({ waitFor: &#x27;ready_for_writes&#x27;, timeout: 30 }))
+      .run(conn);
+  }).then(() =&#x3e; {
+    // Error if any collections will be removed
+    if (!options.update) {
+      return r.db(db).table(&#x27;hz_collections&#x27;)
+        .filter((row) =&#x3e; row(&#x27;id&#x27;).match(&#x27;^hz_&#x27;).not())
+        .getField(&#x27;id&#x27;)
+        .coerceTo(&#x27;array&#x27;)
+        .setDifference(schema.collections.map((c) =&#x3e; c.id))
+        .run(conn)
+        .then((res) =&#x3e; {
+          if (!options.force &#x26;&#x26; res.length &#x3e; 0) {
+            throw new Error(&#x27;Run with &#x22;--force&#x22; to continue.\n&#x27; +
+                            &#x27;These collections would be removed along with their data:\n&#x27; +
+                            `${res.join(&#x27;, &#x27;)}`);
+          }
+          obsolete_collections = res;
+        });
+    }
+  }).then(() =&#x3e; {
+    if (options.update) {
+      // Update groups
+      return Promise.all(schema.groups.map((group) =&#x3e; {
+        const literal_group = JSON.parse(JSON.stringify(group));
+        Object.keys(literal_group.rules).forEach((key) =&#x3e; {
+          literal_group.rules[key] = r.literal(literal_group.rules[key]);
+        });
+
+        return r.db(db).table(&#x27;hz_groups&#x27;)
+          .get(group.id).replace((old_row) =&#x3e;
+            r.branch(old_row.eq(null),
+                     group,
+                     old_row.merge(literal_group)))
+          .run(conn).then((res) =&#x3e; {
+            if (res.errors) {
+              throw new Error(`Failed to update group: ${res.first_error}`);
+            }
+          });
+      }));
+    } else {
+      // Replace and remove groups
+      const groups_obj = { };
+      schema.groups.forEach((g) =&#x3e; { groups_obj[g.id] = g; });
+
+      return Promise.all([
+        r.expr(groups_obj).do((groups) =&#x3e;
+          r.db(db).table(&#x27;hz_groups&#x27;)
+            .replace((old_row) =&#x3e;
+              r.branch(groups.hasFields(old_row(&#x27;id&#x27;)),
+                       old_row,
+                       null))
+          ).run(conn).then((res) =&#x3e; {
+            if (res.errors) {
+              throw new Error(`Failed to write groups: ${res.first_error}`);
+            }
+          }),
+        r.db(db).table(&#x27;hz_groups&#x27;)
+          .insert(schema.groups, { conflict: &#x27;replace&#x27; })
+          .run(conn).then((res) =&#x3e; {
+            if (res.errors) {
+              throw new Error(`Failed to write groups: ${res.first_error}`);
+            }
+          }),
+      ]);
+    }
+  }).then(() =&#x3e; {
+    // Ensure all collections exist and remove any obsolete collections
+    const promise ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    project_name: opts.project_name,
+    schema_file: opts.schema_file,
+    start_rethinkdb: false,
+    connect: `${opts.rdb_host}:${opts.rdb_port}`,
+    update: true,
+    force: false,
+  });
+  return schema.<span class="apidocCodeKeywordSpan">runApplyCommand</span>(schemaOptions);
+}
+  }).then(() =&#x3e; {
+console.log(&#x27;Starting Horizon...&#x27;);
+hz_server = start_horizon_server(http_servers, opts);
+
+return new Promise((resolve, reject) =&#x3e; {
+  const timeoutObject = setTimeout(() =&#x3e; {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.schema.runSaveCommand" id="apidoc.element.horizon.schema.runSaveCommand">
+        function <span class="apidocSignatureSpan">horizon.schema.</span>runSaveCommand
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(options) =&#x3e; {
+  let conn, rdb_server;
+  const db = options.project_name;
+
+  const cleanup = () =&#x3e;
+    Promise.all([
+      conn ? conn.close() : Promise.resolve(),
+      rdb_server ? rdb_server.close() : Promise.resolve(),
+    ]);
+
+  interrupt.on_interrupt(() =&#x3e; cleanup());
+
+  return Promise.resolve().then(() =&#x3e; {
+    if (options.start_rethinkdb) {
+      change_to_project_dir(options.project_path);
+    }
+  }).then(() =&#x3e; {
+    if (options.start_rethinkdb) {
+      return start_rdb_server({ quiet: !options.debug }).then((server) =&#x3e; {
+        rdb_server = server;
+        options.rdb_host = &#x27;localhost&#x27;;
+        options.rdb_port = server.driver_port;
+      });
+    }
+  }).then(() =&#x3e;
+    r.connect({ host: options.rdb_host,
+                port: options.rdb_port,
+                user: options.rdb_user,
+                password: options.rdb_password,
+                timeout: options.rdb_timeout })
+  ).then((rdb_conn) =&#x3e; {
+    conn = rdb_conn;
+    return r.db(db).wait({ waitFor: &#x27;ready_for_reads&#x27;, timeout: 30 }).run(conn);
+  }).then(() =&#x3e;
+    r.object(&#x27;collections&#x27;,
+             r.db(db).table(&#x27;hz_collections&#x27;)
+               .filter((row) =&#x3e; row(&#x27;id&#x27;).match(&#x27;^hz_&#x27;).not())
+               .coerceTo(&#x27;array&#x27;)
+               .map((row) =&#x3e;
+                 row.merge({ indexes: r.db(db).table(row(&#x27;id&#x27;)).indexList() })),
+             &#x27;groups&#x27;, r.db(db).table(&#x27;hz_groups&#x27;).coerceTo(&#x27;array&#x27;))
+      .run(conn)
+  ).then((res) =&#x3e;
+    new Promise((resolve) =&#x3e; {
+      // Only rename old file if saving to default .hz/schema.toml
+      if (options.out_file === &#x27;.hz/schema.toml&#x27; &#x26;&#x26;
+          file_exists(options.out_file)) {
+        // Rename existing file to have the current time appended to its name
+        const oldPath = path.resolve(options.out_file);
+        const newPath = `${path.resolve(options.out_file)}.${new Date().toISOString()}`;
+        fs.renameSync(oldPath, newPath);
+      }
+
+      const output = (options.out_file === &#x27;-&#x27;) ? process.stdout :
+        fs.createWriteStream(options.out_file, { flags: &#x27;w&#x27;, defaultEncoding: &#x27;utf8&#x27; });
+
+      // Output toml_str to schema.toml
+      const toml_str = schema_to_toml(res.collections, res.groups);
+      output.end(toml_str, resolve);
+    })
+  ).then(cleanup).catch((err) =&#x3e; cleanup().then(() =&#x3e; { throw err; }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.serve" id="apidoc.module.horizon.serve">module horizon.serve</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.serve.parseArguments" id="apidoc.element.horizon.serve.parseArguments">
+        function <span class="apidocSignatureSpan">horizon.serve.</span>parseArguments
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(args) =&#x3e; {
+  const parser = new argparse.ArgumentParser({ prog: &#x27;hz serve&#x27; });
+
+  parser.addArgument([ &#x27;project_path&#x27; ],
+    { type: &#x27;string&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Change to this directory before serving&#x27; });
+
+  parser.addArgument([ &#x27;--project-name&#x27;, &#x27;-n&#x27; ],
+    { type: &#x27;string&#x27;, action: &#x27;store&#x27;, metavar: &#x27;NAME&#x27;,
+      help: &#x27;Name of the Horizon project. Determines the name of &#x27; +
+            &#x27;the RethinkDB database that stores the project data.&#x27; });
+
+  parser.addArgument([ &#x27;--bind&#x27;, &#x27;-b&#x27; ],
+    { type: &#x27;string&#x27;, action: &#x27;append&#x27;, metavar: &#x27;HOST&#x27;,
+      help: &#x27;Local hostname to serve horizon on (repeatable).&#x27; });
+
+  parser.addArgument([ &#x27;--port&#x27;, &#x27;-p&#x27; ],
+    { type: &#x27;int&#x27;, metavar: &#x27;PORT&#x27;,
+      help: &#x27;Local port to serve horizon on.&#x27; });
+
+  parser.addArgument([ &#x27;--connect&#x27;, &#x27;-c&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;HOST:PORT&#x27;,
+      help: &#x27;Host and port of the RethinkDB server to connect to.&#x27; });
+
+  parser.addArgument([ &#x27;--rdb-timeout&#x27; ],
+    { type: &#x27;int&#x27;, metavar: &#x27;TIMEOUT&#x27;,
+      help: &#x27;Timeout period in seconds for the RethinkDB connection to be opened&#x27; });
+
+  parser.addArgument([ &#x27;--rdb-user&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;USER&#x27;,
+      help: &#x27;RethinkDB User&#x27; });
+
+  parser.addArgument([ &#x27;--rdb-password&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;PASSWORD&#x27;,
+      help: &#x27;RethinkDB Password&#x27; });
+
+  parser.addArgument([ &#x27;--key-file&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;PATH&#x27;,
+      help: &#x27;Path to the key file to use, defaults to &#x22;./horizon-key.pem&#x22;.&#x27; });
+
+  parser.addArgument([ &#x27;--cert-file&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;PATH&#x27;,
+      help: &#x27;Path to the cert file to use, defaults to &#x22;./horizon-cert.pem&#x22;.&#x27; });
+
+  parser.addArgument([ &#x27;--token-secret&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;SECRET&#x27;,
+      help: &#x27;Key for signing jwts&#x27; });
+
+  parser.addArgument([ &#x27;--allow-unauthenticated&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Whether to allow unauthenticated Horizon connections.&#x27; });
+
+  parser.addArgument([ &#x27;--allow-anonymous&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Whether to allow anonymous Horizon connections.&#x27; });
+
+  parser.addArgument([ &#x27;--debug&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Enable debug logging.&#x27; });
+
+  parser.addArgument([ &#x27;--secure&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Serve secure websockets, requires --key-file and &#x27; +
+      &#x27;--cert-file if true, on by default.&#x27; });
+
+  parser.addArgument([ &#x27;--start-rethinkdb&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Start up a RethinkDB server in the current directory&#x27; });
+
+  parser.addArgument([ &#x27;--auto-create-collection&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Create collections used by requests if they do not exist.&#x27; });
+
+  parser.addArgument([ &#x27;--auto-create-index&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Create indexes used by requests if they do not exist.&#x27; });
+
+  parser.addArgument([ &#x27;--permissions&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;yes|no&#x27;, constant: &#x27;yes&#x27;, nargs: &#x27;?&#x27;,
+      help: &#x27;Enables or disables checking permissions on requests.&#x27; });
+
+  parser.addArgument([ &#x27;--serve-static&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;PATH&#x27;, nargs: &#x27;?&#x27;, constant: &#x27;./dist&#x27;,
+      help: &#x27;Serve static files from a directory, defaults to &#x22;./dist&#x22;.&#x27; });
+
+  parser.addArgument([ &#x27;--dev&#x27; ],
+    { action: &#x27;storeTrue&#x27;,
+      help: &#x27;Runs the server in development mode, this sets &#x27; +
+      &#x27;--secure=no, &#x27; +
+      &#x27;--permissions=no, &#x27; +
+      &#x27;--auto-create-collection=yes, &#x27; +
+      &#x27;--auto-create-index=yes, &#x27; +
+      &#x27;--start-rethinkdb=yes, &#x27; +
+      &#x27;--allow-unauthenticated=yes, &#x27; +
+      &#x27;--allow-anonymous=yes &#x27; +
+      &#x27;and --serve-static=./dist.&#x27; });
+
+  parser.addArgument([ &#x27;--schema-file&#x27; ],
+    { type: &#x27;string&#x27;, metavar: &#x27;SCHEMA_FILE_PATH&#x27;,
+      help: &#x27;Path to the schema file to use, &#x27; +
+      &#x27;will attempt to apply schema before starting Horizon server&#x22;.&#x27; });
+
+  parser.a ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.serve.processConfig" id="apidoc.element.horizon.serve.processConfig">
+        function <span class="apidocSignatureSpan">horizon.serve.</span>processConfig
+        <span class="apidocSignatureSpan">(parsed)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(parsed) =&#x3e; {
+  let options;
+
+  options = config.default_options();
+
+  options = config.merge_options(options,
+    config.read_from_config_file(parsed.project_path));
+
+  options = config.merge_options(options,
+    config.read_from_secrets_file(parsed.project_path));
+
+  options = config.merge_options(options, config.read_from_env());
+
+  options = config.merge_options(options, config.read_from_flags(parsed));
+
+  if (options.project_name === null) {
+    options.project_name = path.basename(path.resolve(options.project_path));
+  }
+
+  if (options.bind.indexOf(&#x27;all&#x27;) !== -1) {
+    options.bind = [ &#x27;0.0.0.0&#x27; ];
+  }
+
+  if (!options.rdb_host) {
+    options.rdb_host = default_rdb_host;
+  }
+
+  if (!options.rdb_port) {
+    options.rdb_port = default_rdb_port;
+  }
+
+  if (!options.rdb_timeout) {
+    options.rdb_timeout = default_rdb_timeout;
+  }
+
+  return options;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.serve.run" id="apidoc.element.horizon.serve.run">
+        function <span class="apidocSignatureSpan">horizon.serve.</span>run
+        <span class="apidocSignatureSpan">(args, interruptor)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(args, interruptor) =&#x3e; {
+  let opts, http_servers, hz_server, rdb_server;
+  const old_log_level = logger.level;
+
+  const cleanup = () =&#x3e; {
+    logger.level = old_log_level;
+
+    return Promise.all([
+      hz_server ? hz_server.close() : Promise.resolve(),
+      rdb_server ? rdb_server.close() : Promise.resolve(),
+      http_servers ? Promise.all(http_servers.map((s) =&#x3e;
+        new Promise((resolve) =&#x3e; s.close(resolve)))) : Promise.resolve(),
+    ]);
+  };
+
+  interrupt.on_interrupt(() =&#x3e; cleanup());
+
+  return Promise.resolve().then(() =&#x3e; {
+    opts = processConfig(parseArguments(args));
+    logger.level = opts.debug ? &#x27;debug&#x27; : &#x27;warn&#x27;;
+
+    if (!opts.secure &#x26;&#x26; opts.auth &#x26;&#x26; Array.from(Object.keys(opts.auth)).length &#x3e; 0) {
+      logger.warn(&#x27;Authentication requires that the server be accessible via HTTPS. &#x27; +
+                  &#x27;Either specify &#x22;secure=true&#x22; or use a reverse proxy.&#x27;);
+    }
+
+    change_to_project_dir(opts.project_path);
+
+    if (opts.secure) {
+      return create_secure_servers(opts);
+    } else {
+      return create_insecure_servers(opts);
+    }
+  }).then((servers) =&#x3e; {
+    http_servers = servers;
+
+    if (opts.start_rethinkdb) {
+      return start_rdb_server().then((server) =&#x3e; {
+        rdb_server = server;
+
+        // Don&#x27;t need to check for host, always localhost.
+        opts.rdb_host = &#x27;localhost&#x27;;
+        opts.rdb_port = server.driver_port;
+
+        console.log(&#x27;RethinkDB&#x27;);
+        console.log(`   ├── Admin interface: http://localhost:${server.http_port}`);
+        console.log(`   └── Drivers can connect to port ${server.driver_port}`);
+      });
+    }
+  }).then(() =&#x3e; {
+    // Ensure schema from schema.toml file is set
+    if (opts.schema_file) {
+      console.log(`Ensuring schema &#x22;${opts.schema_file}&#x22; is applied`);
+      try {
+        fs.accessAsync(opts.schema_file, fs.R_OK | fs.F_OK);
+      } catch (e) {
+        console.error(
+          chalk.yellow.bold(&#x27;No .hz/schema.toml file found&#x27;));
+        return;
+      }
+      const schemaOptions = schema.processApplyConfig({
+        project_name: opts.project_name,
+        schema_file: opts.schema_file,
+        start_rethinkdb: false,
+        connect: `${opts.rdb_host}:${opts.rdb_port}`,
+        update: true,
+        force: false,
+      });
+      return schema.runApplyCommand(schemaOptions);
+    }
+  }).then(() =&#x3e; {
+    console.log(&#x27;Starting Horizon...&#x27;);
+    hz_server = start_horizon_server(http_servers, opts);
+
+    return new Promise((resolve, reject) =&#x3e; {
+      const timeoutObject = setTimeout(() =&#x3e; {
+        reject(new Error(&#x27;Horizon failed to start after 30 seconds.\n&#x27; +
+                         &#x27;Try running hz serve again with the --debug flag&#x27;));
+      }, TIMEOUT_30_SECONDS);
+
+      hz_server.ready().then(() =&#x3e; {
+        clearTimeout(timeoutObject);
+        console.log(chalk.green.bold(&#x27;🌄 Horizon ready for connections&#x27;));
+        resolve(hz_server);
+      }).catch(reject);
+    });
+  }).then(() =&#x3e; {
+    if (opts.auth) {
+      for (const name in opts.auth) {
+        const provider = horizon_server.auth[name];
+        if (!provider) {
+          throw new Error(`Unrecognized auth provider &#x22;${name}&#x22;`);
+        }
+        hz_server.add_auth_provider(provider,
+                                    Object.assign({}, { path: name }, opts.auth[name]));
+      }
+    }
+  }).then(() =&#x3e; {
+    // Automatically open up index.html in the `dist` directory only if
+    //  `--open` flag specified and an index.html exists in the directory.
+    if (opts.open &#x26;&#x26; opts.serve_static) {
+      try {
+        // Check if index.html exists and readable in serve static_static directory
+        fs.accessSync(`${opts.serve_static}/index.html`, fs.R_OK | fs.F_OK);
+        // Determine scheme from options
+        const scheme = opts.secure ? &#x27;https://&#x27; : &#x27;http://&#x27;;
+        // Open up index.html in default browser
+        console.log(&#x27;Attempting open of index.html in default browser&#x27;);
+        open(`${scheme}${opts.bind}:${opts.port}/index.html`);
+      } catch (open_err) {
+        console.log(chalk.red(&#x27;Error occurred while trying to open &#x27; +
+                              `${opts.serve_sta ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return Promise.resolve().then(() =&#x3e; {
+    white(&#x27;Validating current schema version&#x27;);
+    return r.dbList().contains(`${project}_internal`)
+      .branch(true, r.error(internalNotFound))
+      .do(() =&#x3e; checkForHzTables)
+      .do(() =&#x3e; waitForCollections)
+      .<span class="apidocCodeKeywordSpan">run</span>(this.conn)
+      .then(() =&#x3e; green(&#x27; └── Pre-2.0 schema found&#x27;))
+      .catch((e) =&#x3e; {
+        if (e.msg === internalNotFound) {
+          throw new NiceError(e.msg, {
+            description: `\
+This could happen if you don&#x27;t have a Horizon app in this database, or if \
+you&#x27;ve already migrated this database to the v2.0 format.`,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.version" id="apidoc.module.horizon.version">module horizon.version</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.version.run" id="apidoc.element.horizon.version.run">
+        function <span class="apidocSignatureSpan">horizon.version.</span>run
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(args) =&#x3e;
+Promise.resolve().then(() =&#x3e; {
+  if (args &#x26;&#x26; args.length) {
+    throw new Error(&#x27;create-cert takes no arguments&#x27;);
+  }
+  console.info(package_json.version);
+})</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  return Promise.resolve().then(() =&#x3e; {
+    white(&#x27;Validating current schema version&#x27;);
+    return r.dbList().contains(`${project}_internal`)
+      .branch(true, r.error(internalNotFound))
+      .do(() =&#x3e; checkForHzTables)
+      .do(() =&#x3e; waitForCollections)
+      .<span class="apidocCodeKeywordSpan">run</span>(this.conn)
+      .then(() =&#x3e; green(&#x27; └── Pre-2.0 schema found&#x27;))
+      .catch((e) =&#x3e; {
+        if (e.msg === internalNotFound) {
+          throw new NiceError(e.msg, {
+            description: `\
+This could happen if you don&#x27;t have a Horizon app in this database, or if \
+you&#x27;ve already migrated this database to the v2.0 format.`,
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
