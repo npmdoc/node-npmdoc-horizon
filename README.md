@@ -21,9 +21,21 @@
 ```json
 
 {
-    "author": {
-        "name": "RethinkDB"
+    "name": "horizon",
+    "version": "2.0.0",
+    "description": "An open-source developer platform for building realtime, scalable web apps.",
+    "main": "src/main.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rethinkdb/horizon.git"
     },
+    "scripts": {
+        "lint": "eslint src test",
+        "test": "mocha test test/unit --timeout 10000",
+        "coverage": "istanbul cover _mocha test"
+    },
+    "author": "RethinkDB",
+    "license": "MIT",
     "bin": {
         "hz": "src/main.js",
         "horizon": "src/main.js"
@@ -31,6 +43,7 @@
     "bugs": {
         "url": "https://github.com/rethinkdb/horizon/issues"
     },
+    "homepage": "https://github.com/rethinkdb/horizon#readme",
     "dependencies": {
         "@horizon/server": "2.0.0",
         "argparse": "^1.0.3",
@@ -44,7 +57,6 @@
         "rethinkdb": "^2.1.1",
         "toml": "^2.3.0"
     },
-    "description": "An open-source developer platform for building realtime, scalable web apps.",
     "devDependencies": {
         "chai": "^3.5.0",
         "eslint": "^2.3.0",
@@ -55,36 +67,11 @@
         "strip-ansi": "^3.0.1",
         "toml": "^2.3.0"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "0049b36faeae7779f048d7cc07d0b77b4ca9c3d7",
-        "tarball": "https://registry.npmjs.org/horizon/-/horizon-2.0.0.tgz"
-    },
     "engines": {
         "node": ">=4.0.0",
         "npm": ">=3.0.0"
     },
-    "homepage": "https://github.com/rethinkdb/horizon#readme",
-    "license": "MIT",
-    "main": "src/main.js",
-    "maintainers": [
-        {
-            "name": "rethinkdb"
-        }
-    ],
-    "name": "horizon",
-    "optionalDependencies": {},
-    "preferGlobal": true,
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/rethinkdb/horizon.git"
-    },
-    "scripts": {
-        "coverage": "istanbul cover _mocha test",
-        "lint": "eslint src test",
-        "test": "mocha test test/unit --timeout 10000"
-    },
-    "version": "2.0.0"
+    "preferGlobal": true
 }
 ```
 
