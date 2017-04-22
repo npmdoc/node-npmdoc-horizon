@@ -63,6 +63,21 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.start_rdb_server">
+            function <span class="apidocSignatureSpan">horizon.</span>start_rdb_server
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>config</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>create_cert</span>
 
         </li>
@@ -70,6 +85,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>init</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>interrupt</span>
 
         </li>
 
@@ -100,6 +121,85 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">horizon.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.config">module horizon.config</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.config.default_options">
+            function <span class="apidocSignatureSpan">horizon.config.</span>default_options
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.config.merge_options">
+            function <span class="apidocSignatureSpan">horizon.config.</span>merge_options
+            <span class="apidocSignatureSpan">(old_options, new_options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.config.parse_connect">
+            function <span class="apidocSignatureSpan">horizon.config.</span>parse_connect
+            <span class="apidocSignatureSpan">(connect, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.config.read_from_config_file">
+            function <span class="apidocSignatureSpan">horizon.config.</span>read_from_config_file
+            <span class="apidocSignatureSpan">(project_path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.config.read_from_env">
+            function <span class="apidocSignatureSpan">horizon.config.</span>read_from_env
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.config.read_from_flags">
+            function <span class="apidocSignatureSpan">horizon.config.</span>read_from_flags
+            <span class="apidocSignatureSpan">(parsed)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.config.read_from_secrets_file">
+            function <span class="apidocSignatureSpan">horizon.config.</span>read_from_secrets_file
+            <span class="apidocSignatureSpan">(projectPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.config.</span>default_config_file</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.config.</span>default_secrets_file</span>
 
         </li>
 
@@ -138,6 +238,28 @@
         <li>
 
             <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">horizon.init.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.interrupt">module horizon.interrupt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.interrupt.interrupt">
+            function <span class="apidocSignatureSpan">horizon.</span>interrupt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.interrupt.on_interrupt">
+            function <span class="apidocSignatureSpan">horizon.interrupt.</span>on_interrupt
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
 
         </li>
 
@@ -273,6 +395,28 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.horizon.start_rdb_server">module horizon.start_rdb_server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.start_rdb_server.start_rdb_server">
+            function <span class="apidocSignatureSpan">horizon.</span>start_rdb_server
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.horizon.start_rdb_server.r">
+            function <span class="apidocSignatureSpan">horizon.start_rdb_server.</span>r
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.horizon.version">module horizon.version</a><ol>
 
         <li>
@@ -298,6 +442,16 @@
 <h1><a href="#apidoc.module.horizon" id="apidoc.module.horizon">module horizon</a></h1>
 
 
+    <h2>
+        <a href="#apidoc.element.horizon.start_rdb_server" id="apidoc.element.horizon.start_rdb_server">
+        function <span class="apidocSignatureSpan">horizon.</span>start_rdb_server
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(options) =&#x3e; new RethinkdbServer(options || { }).ready()</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 
@@ -305,6 +459,486 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.config" id="apidoc.module.horizon.config">module horizon.config</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.config.default_options" id="apidoc.element.horizon.config.default_options">
+        function <span class="apidocSignatureSpan">horizon.config.</span>default_options
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">() =&#x3e; ({
+  config: null,
+  debug: false,
+  // Default to current directory for path
+  project_path: &#x27;.&#x27;,
+  // Default to current directory name for project name
+  project_name: null,
+
+  bind: [ &#x27;localhost&#x27; ],
+  port: 8181,
+
+  start_rethinkdb: false,
+  serve_static: null,
+  open: false,
+
+  secure: true,
+  permissions: true,
+  key_file: &#x27;./horizon-key.pem&#x27;,
+  cert_file: &#x27;./horizon-cert.pem&#x27;,
+  schema_file: null,
+
+  auto_create_collection: false,
+  auto_create_index: false,
+
+  rdb_host: null,
+  rdb_port: null,
+  rdb_user: null,
+  rdb_password: null,
+  rdb_timeout: null,
+
+  token_secret: null,
+  allow_anonymous: false,
+  allow_unauthenticated: false,
+  auth_redirect: &#x27;/&#x27;,
+  access_control_allow_origin: &#x27;&#x27;,
+
+  auth: { },
+})</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+return parser.parseArgs(args);
+};
+
+const processConfig = (parsed) =&#x3e; {
+let options;
+
+options = config.<span class="apidocCodeKeywordSpan">default_options</span>();
+
+options = config.merge_options(
+  options, config.read_from_config_file(parsed.project_path));
+options = config.merge_options(
+  options, config.read_from_secrets_file(parsed.project_path));
+options = config.merge_options(options, config.read_from_env());
+options = config.merge_options(options, config.read_from_flags(parsed));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.config.merge_options" id="apidoc.element.horizon.config.merge_options">
+        function <span class="apidocSignatureSpan">horizon.config.</span>merge_options
+        <span class="apidocSignatureSpan">(old_options, new_options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(old_options, new_options) =&#x3e; {
+  // Disable start_rethinkdb if it was enabled by dev mode but we already have a host
+  if (new_options._start_rethinkdb_implicit) {
+    if (old_options.rdb_host) {
+      delete new_options.start_rethinkdb;
+    }
+  } else if (new_options.start_rethinkdb &#x26;&#x26; new_options.rdb_host) {
+    throw new Error(&#x27;Cannot provide both --start-rethinkdb and --connect.&#x27;);
+  }
+
+  for (const key in new_options) {
+    if (key === &#x27;rdb_host&#x27;) {
+      old_options.start_rethinkdb = false;
+    }
+
+    if (key === &#x27;auth&#x27;) {
+      for (const provider in new_options.auth) {
+        old_options.auth[provider] = old_options.auth[provider] || { };
+        for (const field in new_options.auth[provider]) {
+          old_options.auth[provider][field] = new_options.auth[provider][field];
+        }
+      }
+    } else {
+      old_options[key] = new_options[key];
+    }
+  }
+
+  return old_options;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+const processConfig = (parsed) =&#x3e; {
+let options;
+
+options = config.default_options();
+
+options = config.<span class="apidocCodeKeywordSpan">merge_options</span>(
+  options, config.read_from_config_file(parsed.project_path));
+options = config.merge_options(
+  options, config.read_from_secrets_file(parsed.project_path));
+options = config.merge_options(options, config.read_from_env());
+options = config.merge_options(options, config.read_from_flags(parsed));
+
+if (options.project_name === null) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.config.parse_connect" id="apidoc.element.horizon.config.parse_connect">
+        function <span class="apidocSignatureSpan">horizon.config.</span>parse_connect
+        <span class="apidocSignatureSpan">(connect, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(connect, config) =&#x3e; {
+  // support rethinkdb:// style connection uri strings
+  // expects rethinkdb://host:port` at a minimum but can optionally take a user:pass and db
+  // e.g. rethinkdb://user:pass@host:port/db
+  const rdb_uri = url.parse(connect);
+  if (rdb_uri.protocol === &#x27;rethinkdb:&#x27;) {
+    if (rdb_uri.hostname) {
+      config.rdb_host = rdb_uri.hostname;
+      config.rdb_port = rdb_uri.port || default_rdb_port;
+
+      // check for user/pass
+      if (rdb_uri.auth) {
+        const user_pass = rdb_uri.auth.split(&#x27;:&#x27;);
+        config.rdb_user = user_pass[0];
+        config.rdb_password = user_pass[1];
+      }
+
+      // set the project name based on the db
+      if (rdb_uri.path &#x26;&#x26; rdb_uri.path.replace(&#x27;/&#x27;, &#x27;&#x27;) !== &#x27;&#x27;) {
+        config.project_name = rdb_uri.path.replace(&#x27;/&#x27;, &#x27;&#x27;);
+      }
+    } else {
+      throw new Error(`Expected --connect rethinkdb://HOST, but found &#x22;${connect}&#x22;.`);
+    }
+  } else {
+    // support legacy HOST:PORT connection strings
+    const host_port = connect.split(&#x27;:&#x27;);
+    if (host_port.length === 1) {
+      config.rdb_host = host_port[0];
+      config.rdb_port = default_rdb_port;
+    } else if (host_port.length === 2) {
+      config.rdb_host = host_port[0];
+      config.rdb_port = parseInt(host_port[1]);
+      if (isNaN(config.rdb_port) || config.rdb_port &#x3c; 0 || config.rdb_port &#x3e; 65535) {
+        throw new Error(`Invalid port: &#x22;${host_port[1]}&#x22;.`);
+      }
+    } else {
+      throw new Error(`Expected --connect HOST:PORT, but found &#x22;${connect}&#x22;.`);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    rdb_password: parsed.rdb_password || confOptions.rdb_password || &#x27;&#x27;,
+    start_rethinkdb: parse_yes_no_option(parsed.start_rethinkdb),
+    skip_backup: parse_yes_no_option(parsed.skip_backup),
+    nonportable_backup: parse_yes_no_option(parsed.nonportable_backup),
+  };
+  // sets rdb_host and rdb_port from connect if necessary
+  if (parsed.connect) {
+    config.<span class="apidocCodeKeywordSpan">parse_connect</span>(parsed.connect, options);
+  }
+
+  if (options.project_name == null) {
+    throw new NiceError(&#x27;No project_name given&#x27;, {
+      description: `\
+The project_name is needed to migrate from the v1.x format the v.2.0 format. \
+It wasn&#x27;t passed on the command line or found in your config.`,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.config.read_from_config_file" id="apidoc.element.horizon.config.read_from_config_file">
+        function <span class="apidocSignatureSpan">horizon.config.</span>read_from_config_file
+        <span class="apidocSignatureSpan">(project_path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(project_path) =&#x3e; {
+  const config = { auth: { } };
+
+  let fileData, configFilename, fileConfig;
+
+  if (project_path) {
+    configFilename = `${project_path}/${default_config_file}`;
+  } else {
+    configFilename = default_config_file;
+  }
+
+  try {
+    fileData = fs.readFileSync(configFilename);
+  } catch (err) {
+    return config;
+  }
+
+  try {
+    fileConfig = toml.parse(fileData);
+  } catch (e) {
+    if (e.name === &#x27;SyntaxError&#x27;) {
+      throw new NiceError(
+        `There was a syntax error when parsing ${configFilename}`, {
+          description: `Something was wrong with the format of \
+${configFilename}, causing it not be a valid TOML file.`,
+          src: {
+            filename: configFilename,
+            contents: fileData,
+            line: e.line,
+            column: e.column,
+          },
+          suggestions: [
+            &#x27;Check that all strings values have quotes around them&#x27;,
+            &#x27;Check that key/val pairs use equals and not colons&#x27;,
+            &#x27;See https://github.com/toml-lang/toml#user-content-spec&#x27;,
+          ],
+        });
+    } else {
+      throw e;
+    }
+  }
+  for (const field in fileConfig) {
+    if (field === &#x27;connect&#x27;) {
+      parse_connect(fileConfig.connect, config);
+    } else if (yes_no_options.indexOf(field) !== -1) {
+      config[field] = parse_yes_no_option(fileConfig[field], field);
+    } else if (default_options[field] !== undefined) {
+      config[field] = fileConfig[field];
+    } else {
+      throw new Error(`Unknown config parameter: &#x22;${field}&#x22;.`);
+    }
+  }
+  return config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+const processConfig = (parsed) =&#x3e; {
+let options;
+
+options = config.default_options();
+
+options = config.merge_options(
+  options, config.<span class="apidocCodeKeywordSpan">read_from_config_file</span>(parsed.project_path));
+options = config.merge_options(
+  options, config.read_from_secrets_file(parsed.project_path));
+options = config.merge_options(options, config.read_from_env());
+options = config.merge_options(options, config.read_from_flags(parsed));
+
+if (options.project_name === null) {
+  options.project_name = path.basename(path.resolve(options.project_path));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.config.read_from_env" id="apidoc.element.horizon.config.read_from_env">
+        function <span class="apidocSignatureSpan">horizon.config.</span>read_from_env
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">() =&#x3e; {
+  const config = { auth: { } };
+  for (const env_var in process.env) {
+    const matches = env_regex.exec(env_var);
+    if (matches &#x26;&#x26; matches[1]) {
+      const destVarName = matches[1].toLowerCase();
+      const varPath = destVarName.split(&#x27;_&#x27;);
+      const value = process.env[env_var];
+
+      if (destVarName === &#x27;connect&#x27;) {
+        parse_connect(value, config);
+      } else if (destVarName === &#x27;bind&#x27;) {
+        config[destVarName] = value.split(&#x27;,&#x27;);
+      } else if (varPath[0] === &#x27;auth&#x27;) {
+        if (varPath.length !== 3) {
+          console.log(`Ignoring malformed Horizon environment variable: &#x22;${env_var}&#x22;, ` +
+                      &#x27;should be HZ_AUTH_{PROVIDER}_{OPTION}.&#x27;);
+        } else {
+          config.auth[varPath[1]] = config.auth[varPath[1]] || { };
+          config.auth[varPath[1]][varPath[2]] = value;
+        }
+      } else if (yes_no_options.indexOf(destVarName) !== -1) {
+        config[destVarName] = parse_yes_no_option(value, destVarName);
+      } else if (default_options[destVarName] !== undefined) {
+        config[destVarName] = value;
+      }
+    }
+  }
+
+  return config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+options = config.default_options();
+
+options = config.merge_options(
+  options, config.read_from_config_file(parsed.project_path));
+options = config.merge_options(
+  options, config.read_from_secrets_file(parsed.project_path));
+options = config.merge_options(options, config.<span class="apidocCodeKeywordSpan">read_from_env</span>());
+options = config.merge_options(options, config.read_from_flags(parsed));
+
+if (options.project_name === null) {
+  options.project_name = path.basename(path.resolve(options.project_path));
+}
+
+return Object.assign(options, { user: parsed.user });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.config.read_from_flags" id="apidoc.element.horizon.config.read_from_flags">
+        function <span class="apidocSignatureSpan">horizon.config.</span>read_from_flags
+        <span class="apidocSignatureSpan">(parsed)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(parsed) =&#x3e; {
+  const config = { auth: { } };
+
+  // Dev mode
+  if (parsed.dev) {
+    config.access_control_allow_origin = &#x27;*&#x27;;
+    config.allow_unauthenticated = true;
+    config.allow_anonymous = true;
+    config.secure = false;
+    config.permissions = false;
+    config.start_rethinkdb = true;
+    config.auto_create_collection = true;
+    config.auto_create_index = true;
+    config.serve_static = &#x27;dist&#x27;;
+    config._dev_flag_used = true;
+
+    if (parsed.start_rethinkdb === null || parsed.start_rethinkdb === undefined) {
+      config._start_rethinkdb_implicit = true;
+    }
+  }
+
+  for (const key in parsed) {
+    if (key === &#x27;auth&#x27; &#x26;&#x26; parsed.auth != null) {
+      // Auth options
+      parsed.auth.forEach((auth_options) =&#x3e; {
+        const params = auth_options.split(&#x27;,&#x27;);
+        if (params.length !== 3) {
+          throw new Error(`Expected --auth PROVIDER,ID,SECRET, but found &#x22;${auth_options}&#x22;`);
+        }
+        config.auth[params[0]] = { id: params[1], secret: params[2] };
+      });
+    } else if (key === &#x27;connect&#x27; &#x26;&#x26; parsed.connect != null) {
+      // Normalize RethinkDB connection options
+      parse_connect(parsed.connect, config);
+    } else if (yes_no_options.indexOf(key) !== -1 &#x26;&#x26; parsed[key] != null) {
+      // Simple &#x27;yes&#x27; or &#x27;no&#x27; (or &#x27;true&#x27; or &#x27;false&#x27;) flags
+      config[key] = parse_yes_no_option(parsed[key], key);
+    } else if (parsed[key] != null) {
+      config[key] = parsed[key];
+    }
+  }
+
+  return config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  options = config.default_options();
+
+  options = config.merge_options(
+    options, config.read_from_config_file(parsed.project_path));
+  options = config.merge_options(
+    options, config.read_from_secrets_file(parsed.project_path));
+  options = config.merge_options(options, config.read_from_env());
+  options = config.merge_options(options, config.<span class="apidocCodeKeywordSpan">read_from_flags</span>(parsed));
+
+  if (options.project_name === null) {
+    options.project_name = path.basename(path.resolve(options.project_path));
+  }
+
+  return Object.assign(options, { user: parsed.user });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.config.read_from_secrets_file" id="apidoc.element.horizon.config.read_from_secrets_file">
+        function <span class="apidocSignatureSpan">horizon.config.</span>read_from_secrets_file
+        <span class="apidocSignatureSpan">(projectPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(projectPath) =&#x3e; {
+  const config = { auth: { } };
+
+  let fileData, secretsFilename;
+
+  if (projectPath) {
+    secretsFilename = `${projectPath}/${default_secrets_file}`;
+  } else {
+    secretsFilename = default_secrets_file;
+  }
+
+  try {
+    fileData = fs.readFileSync(secretsFilename);
+  } catch (err) {
+    return config;
+  }
+
+  const fileConfig = toml.parse(fileData);
+  for (const field in fileConfig) {
+    if (field === &#x27;connect&#x27;) {
+      parse_connect(fileConfig.connect, config);
+    } else if (yes_no_options.indexOf(field) !== -1) {
+      config[field] = parse_yes_no_option(fileConfig[field], field);
+    } else if (default_options[field] !== undefined) {
+      config[field] = fileConfig[field];
+    } else {
+      throw new Error(`Unknown config parameter: &#x22;${field}&#x22;.`);
+    }
+  }
+
+  return config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+let options;
+
+options = config.default_options();
+
+options = config.merge_options(
+  options, config.read_from_config_file(parsed.project_path));
+options = config.merge_options(
+  options, config.<span class="apidocCodeKeywordSpan">read_from_secrets_file</span>(parsed.project_path));
+options = config.merge_options(options, config.read_from_env());
+options = config.merge_options(options, config.read_from_flags(parsed));
+
+if (options.project_name === null) {
+  options.project_name = path.basename(path.resolve(options.project_path));
+}
+...</pre></li>
+    </ul>
 
 
 
@@ -453,6 +1087,62 @@ you&#x27;ve already migrated this database to the v2.0 format.`,
     </ul>
 
 
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.interrupt" id="apidoc.module.horizon.interrupt">module horizon.interrupt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.interrupt.interrupt" id="apidoc.element.horizon.interrupt.interrupt">
+        function <span class="apidocSignatureSpan">horizon.</span>interrupt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">() =&#x3e; {
+  process.removeAllListeners(&#x27;SIGTERM&#x27;);
+  process.removeAllListeners(&#x27;SIGINT&#x27;);
+  process.on(&#x27;SIGTERM&#x27;, () =&#x3e; process.exit(1));
+  process.on(&#x27;SIGINT&#x27;, () =&#x3e; process.exit(1));
+
+  return run_handlers();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.interrupt.on_interrupt" id="apidoc.element.horizon.interrupt.on_interrupt">
+        function <span class="apidocSignatureSpan">horizon.interrupt.</span>on_interrupt
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(cb) =&#x3e; {
+  handlers.push(cb);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+const start_rdb_server = require(&#x27;./utils/start_rdb_server&#x27;);
+const NiceError = require(&#x27;./utils/nice_error.js&#x27;);
+
+const VERSION_2_0 = [ 2, 0, 0 ];
+
+function run(cmdArgs) {
+const options = processConfig(cmdArgs);
+interrupt.<span class="apidocCodeKeywordSpan">on_interrupt</span>(() =&#x3e; teardown());
+return Promise.resolve().bind({ options })
+  .then(setup)
+  .then(validateMigration)
+  .then(makeBackup)
+  .then(renameUserTables)
+  .then(moveInternalTables)
+  .then(renameIndices)
+...</pre></li>
+    </ul>
 
 
 </div>
@@ -1238,6 +1928,41 @@ you&#x27;ve already migrated this database to the v2.0 format.`,
     </ul>
 
 
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.horizon.start_rdb_server" id="apidoc.module.horizon.start_rdb_server">module horizon.start_rdb_server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.start_rdb_server.start_rdb_server" id="apidoc.element.horizon.start_rdb_server.start_rdb_server">
+        function <span class="apidocSignatureSpan">horizon.</span>start_rdb_server
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(options) =&#x3e; new RethinkdbServer(options || { }).ready()</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.horizon.start_rdb_server.r" id="apidoc.element.horizon.start_rdb_server.r">
+        function <span class="apidocSignatureSpan">horizon.start_rdb_server.</span>r
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">r = function () {
+  var args;
+  args = 1 &#x3c;= arguments.length ? slice.call(arguments, 0) : [];
+  return rethinkdb.expr.apply(rethinkdb, args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 </div>
